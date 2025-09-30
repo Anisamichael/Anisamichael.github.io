@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spesial Buat Kamu</title>
+
+    <!-- Icons & SweetAlert -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Screen pembuka -->
+    <div class="open">
+      <div class="open-inner">
+        <div class="lope" onclick="ilang()" tabindex="0">
+          <i class="love material-icons-sharp">favorite</i>
+        </div>
+        <h3>Pencet Love nya</h3>
+      </div>
+    </div>
+
+    <!-- Background slideshow -->
+    <div class="bg">
+      <div style="background-image:url('1.jpg')"></div>
+      <div style="background-image:url('2.jpg')"></div>
+      <div style="background-image:url('3.jpg')"></div>
+      <div style="background-image:url('4.jpg')"></div>
+      <div style="background-image:url('5.jpg')"></div>
+    </div>
+
+    <!-- Partikel love (hujan) -->
+    <div class="bg-love"></div>
+
+    <!-- SLIDE 1 -->
+    <div class="content contentslide1">
+      <div>
+        <p class="typetxt1"></p>
+        <button class="lanjut1" onclick="tampilContent2()">Klik untuk Lanjut ya!</button>
+      </div>
+    </div>
+
+    <!-- SLIDE 2: KADO -->
+    <div class="content2 contentslide2">
+      <div class="txtPilihHadiah">
+        <p class="typetxt2" style="max-width:70vw"></p>
+      </div>
+      <div class="hadiahku">
+        <div class="row">
+          <img class="kado" src="./kado.png" alt="Kue ultah"
+               kadoo="Kue ultah" data-msg="Yeayy kamu dapet Kue ultah 🎂" />
+          <img class="kado" src="./kado.png" alt="Es krim"
+               kadoo="Es krim" data-msg="Yum! Es krim spesial buat kamu 🍨" />
+        </div>
+        <div class="row">
+          <img class="kado" src="./kado.png" alt="Cinta tulusku"
+               kadoo="Cinta tulusku" data-msg="Cinta tulusku buat kamu ❤️" />
+          <img class="kado" src="./kado.png" alt="Kasih sayangku"
+               kadoo="Kasih sayangku" data-msg="Kasih sayangku tanpa batas 💞" />
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 4: Teks setelah kado -->
+    <div class="content contentslide4">
+      <div>
+        <p class="typetxt4"></p>
+        <!-- tombol ini tidak dipakai (auto), tapi dibiarkan jika mau mode manual -->
+        <button class="lanjut4" onclick="tampilContent6()">Klik untuk Lanjut ya!</button>
+      </div>
+    </div>
+
+    <div class="content contentslide6">
+      <div>
+        <p class="typetxt6"></p>
+        <!-- tombol ini tidak dipakai (auto), tapi dibiarkan jika mau mode manual -->
+        <button class="lanjut6" onclick="tampilContent5()">Klik untuk Lanjut ya!</button>
+      </div>
+    </div>
+
+    <!-- SLIDE 3: Hujan love + form wish -->
+    <div class="content2 contentslide3">
+      <div class="txtPilihHadiah">
+        <p class="typetxt3"></p>
+      </div>
+      <div class="wish-box">
+        <textarea id="valuewish" rows="7" placeholder="Tulis wish kamu di sini..."></textarea>
+        <button class="kirimwish" onclick="sendwish()">Kirim</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
